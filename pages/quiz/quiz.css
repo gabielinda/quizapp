@@ -107,6 +107,7 @@ main {
 .pergunta{
     margin-bottom:40px;
 }
+
 .pergunta p {
     font-style: italic;
     font-size: 14px;
@@ -164,6 +165,23 @@ main {
     }
 }
 
+.alternativas label#correta {
+    outline: 3px solid var(--green);
+
+    & span {
+        background: var(--green);
+        color: var(--white);
+    }
+}
+
+.alternativas label#errada {
+    outline: 3px solid var(--red);
+
+    & span {
+        background: var(--red);
+        color: var(--white);
+    }
+}
 .alternativas input {
     display: none;
 }
